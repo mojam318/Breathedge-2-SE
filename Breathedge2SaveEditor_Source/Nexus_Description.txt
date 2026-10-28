@@ -1,0 +1,52 @@
+Suggested file name
+-------------------
+Breathedge2SaveEditor_1.0.0_Windows.zip
+
+Mod title
+---------
+Breathedge 2 Save Editor
+
+Short description
+-----------------
+A standalone save editor for Breathedge 2 with German and English UI, player
+value editing, and inventory management.
+
+Description
+-----------
+Edit your Breathedge 2 saves with a simple Windows desktop tool.
+
+Features
+- Edit player position, view direction, and playtime.
+- View inventory items and their quantity, durability, and charge.
+- Change stack quantities, remove entries, and add items from the installed
+  game's item asset list.
+- Switch the interface between Deutsch and English.
+- Creates a timestamped backup before writing a save.
+- Standalone Windows build; Python is not required.
+
+Installation
+1. Extract the complete archive and keep its folder structure intact.
+2. Run Start_Breathedge2_SaveEditor.bat or Breathedge2SaveEditor.exe.
+
+Usage
+1. Close Breathedge 2 before editing.
+2. Select a *_Data.sav file.
+3. Make changes and click Save changes.
+
+The editor uses the default save folder at
+%LOCALAPPDATA%\Breathedge2Game\Saved\SaveGames. The full item picker uses the
+installed game's Manifest_UFSFiles_Win64.txt. Added special items may require
+game-specific fields that cannot be inferred from a generic inventory entry.
+
+The included source is Breathedge2SaveEditor.py.
+
+AI disclosure
+-------------
+The application includes AI-generated source code and user-interface elements. Apply the AI-Generated Content tag on Nexus Mods.
+
+Changelog
+---------
+1.0.0
+- Initial release.
+- Player values and inventory editing.
+- Deutsch and English interface.

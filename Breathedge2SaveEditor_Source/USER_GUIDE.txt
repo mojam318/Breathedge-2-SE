@@ -1,0 +1,65 @@
+Breathedge 2 Save Editor — v1.0.0
+=================================
+
+ENGLISH
+-------
+Installation
+1. Extract the complete archive. Keep the Breathedge2SaveEditor folder structure
+   intact, including the _internal folder.
+2. Start Start_Breathedge2_SaveEditor.bat or Breathedge2SaveEditor.exe.
+   The packaged executable does not require a separate Python installation.
+
+Use
+1. Close Breathedge 2 before editing.
+2. Select a *_Data.sav file from the list.
+3. Choose Deutsch or English in the top-right language selector.
+4. Edit player position, view direction, playtime, or inventory.
+5. Click Save changes. A timestamped backup is created next to the original.
+
+The default save directory is:
+%LOCALAPPDATA%\Breathedge2Game\Saved\SaveGames
+
+The item picker reads asset names from:
+C:\Program Files (x86)\Steam\steamapps\common\Breathedge2\Manifest_UFSFiles_Win64.txt
+If that manifest is unavailable, items already present in the selected save are
+still available. New items are made from an existing inventory entry in the same
+item category when possible. Some special items may need their own game-specific
+fields and are not guaranteed to work when added this way.
+
+The editor updates player values and InventoryBytes. Other save data, including
+WorldBytes, is preserved. Saves with an unsupported layout are opened without
+inventory editing.
+
+DEUTSCH
+-------
+Installation
+1. Das ganze Archiv entpacken. Die Ordnerstruktur inklusive _internal beibehalten.
+2. Start_Breathedge2_SaveEditor.bat oder Breathedge2SaveEditor.exe starten.
+   Die gepackte EXE benötigt keine separate Python-Installation.
+
+Verwendung
+1. Breathedge 2 vor dem Bearbeiten schließen.
+2. Links eine *_Data.sav-Datei auswählen.
+3. Oben rechts Deutsch oder English wählen.
+4. Spielerposition, Blickrichtung, Spielzeit oder Inventar bearbeiten.
+5. „Änderungen speichern“ drücken. Neben dem Original wird automatisch eine
+   Sicherungskopie mit Zeitstempel angelegt.
+
+Der Standard-Speicherordner ist:
+%LOCALAPPDATA%\Breathedge2Game\Saved\SaveGames
+
+Die Item-Auswahl liest Asset-Namen aus:
+C:\Program Files (x86)\Steam\steamapps\common\Breathedge2\Manifest_UFSFiles_Win64.txt
+Falls das Manifest fehlt, bleiben die Items des ausgewählten Spielstands verfügbar.
+Neue Items werden möglichst aus einem bestehenden Eintrag derselben Kategorie
+erstellt. Spezielle Items können eigene Spieldaten benötigen und funktionieren
+beim Hinzufügen nicht garantiert.
+
+Der Editor ändert Spielerwerte und InventoryBytes. Andere Save-Daten einschließlich
+WorldBytes bleiben erhalten. Speicherstände mit abweichendem Aufbau werden für
+Inventaränderungen nicht freigegeben.
+
+Source mode
+-----------
+The archive also includes Breathedge2SaveEditor.py. If the executable is removed,
+the starter can launch the Python source when Python 3 with Tkinter is installed.
